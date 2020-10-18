@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name= "viewport" content="width=device-width, intial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <script src="Speech/microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+        <script src="speechRequestAuthorization.js"></script>
+        <script src="Speech/textNLP.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+        <script src="voicetext.js"></script>
+
+        <script type="module" src="app.js"></script>
+        <button id="startRecognizeOnceAsyncButton">Start recognition</button>
+
+        <button  id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
+            Begin Lecture
+        </button>
+        <textarea id="phraseDiv"></textarea>
+        <div class = "outer">
+            <div class = "inner">
+          <video id="myvideo" class="videoCanvas" autoplay="autoplay"></video>
+          <canvas id="canvas"></canvas>
+      </div>
+  </div>
+
+  <div id = "bottom" class = "flexgrid">
+    <div class = "flexrow">
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Arnav.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Sohil.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Edison.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/adityacopy.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+      <!--div class = "tile">
+        <canvas id="canvas" class="border canvasbox"></canvas>
+      </div-->
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Nitin.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+      <div class = "tile">
+        <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Cat.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+      </div>
+    </div>
+  </div>
+
+        </body>
+</html>
